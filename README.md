@@ -8,7 +8,7 @@
 
 An enterprise-grade, distributed task queue and background execution engine built with Python, FastAPI, Redis, and PostgreSQL. Engineered to eliminate API latency, handle flaky operations with exponential backoff retries, and isolate failing payloads via a Dead-Letter Queue (DLQ).
 
----
+
 
 ## 🎯 Target Audience & Industry Use Cases
 
@@ -17,7 +17,7 @@ An enterprise-grade, distributed task queue and background execution engine buil
 * **DevOps & Infrastructure Teams:** Engineers managing distributed microservices who require self-healing, fault-tolerant background processing with Dead-Letter Queue containment.
 * **Data Pipelines & ETL Routines:** Applications executing scheduled data ingestion, web scraping, and data transformation jobs where mutation logging and failure auditing are mandatory.
 
----
+
 
 ## ⚡ The Real-World Problem Solved
 
@@ -31,7 +31,7 @@ Executing long-running or resource-intensive tasks synchronously inside a single
 * **Isolated Horizontal Scaling:** Background Python workers pull and execute jobs independently without impacting the primary web API.
 * **Resilience & State Auditability:** Built-in exponential backoff retries handle transient errors automatically, while PostgreSQL persists real-time task states (`PENDING`, `RUNNING`, `COMPLETED`, `FAILED`, `DEAD_LETTER`).
 
----
+
 
 ## 🏗️ System Architecture
 
@@ -108,7 +108,7 @@ curl -X 'POST' \
 curl -X 'GET' 'http://localhost:8000/tasks/<YOUR_TASK_UUID>'
 ```
 
----
+
 
 ## 👤 Author
 
@@ -118,7 +118,7 @@ Backend Software Engineer specializing in distributed systems, REST APIs, and da
 * **GitHub:** [@demmanuel58-spec](https://github.com/demmanuel58-spec)
 * **LinkedIn:** [David Emmanuel](https://linkedin.com)
 
----
+
 
 ## ⚠️ Disclaimer
 
