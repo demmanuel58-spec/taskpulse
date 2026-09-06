@@ -39,7 +39,7 @@ Every task submitted to TaskPulse moves through a strict relational state machin
 ## 📊 Queue Performance & Reliability Mechanics
 
 * **Latency Elimination:**  Decouples task acceptance from execution to ensure web routes return 202 Accepted in under 50ms.
-* **Fault Recovery Algorithm:**  Exponential backoff delays calculated dynamically ($2^{\text{retry\_count}}$ seconds) to allow downstream API recoveries during network flakiness.
+* **Fault Recovery Algorithm:**  Exponential backoff delays calculated dynamically (2^retry_count seconds) to allow downstream API recoveries during network flakiness.
 * **Dead-Letter Containment:**  Unprocessable jobs are automatically isolated to a Redis DLQ and logged to PostgreSQL with complete call stack traces for debugging.
 * **Relational State Persistence:**  Full lifecycle tracking in PostgreSQL for real-time monitoring and compliance auditing.
 
