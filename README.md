@@ -108,7 +108,23 @@ curl -X 'POST' \
 curl -X 'GET' 'http://localhost:8000/tasks/<YOUR_TASK_UUID>'
 ```
 
+---
 
+## 👤 Author
+
+**David Emmanuel**  
+Backend Software Engineer specializing in distributed systems, REST APIs, and database architecture.
+
+* **GitHub:** [@demmanuel58-spec](https://github.com/demmanuel58-spec)
+* **LinkedIn:** [David Emmanuel](https://linkedin.com)
+
+---
+
+## ⚠️ Disclaimer
+
+* **Educational & Demonstration Purposes:** **TaskPulse** was implemented to showcase enterprise distributed system design patterns, worker concurrency, and fault tolerance mechanisms.
+* **Production Deployment:** High-availability production deployments require setting up external secret management, broker clustering/sentinels, and SSL/TLS database connections.
+* **No Warranty:** This software is provided "as-is" without warranty of any kind.
 
 
 
